@@ -1,12 +1,19 @@
-import ResumeAI from "./components/Resume-ai"
+import React from "react";
+import ResumeAnalyzer from "./components/ResumeAnalyzer";
+import InterviewPrep from "./components/InterviewPrep";
 
-function App() {
-
+const App: React.FC = () => {
+  
   return (
-    <>
-      <ResumeAI/>
-    </>
-  )
-}
+    <div>
+     
+      <ResumeAnalyzer/>
+      <hr />
+      <InterviewPrep/>
+      
+      <hr />
+    </div>
+  );
+};
 
-export default App
+export default App;
